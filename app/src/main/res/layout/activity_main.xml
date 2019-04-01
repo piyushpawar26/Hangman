@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/old_paper"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.p3p.hangman.MainActivity"
+    android:id="@+id/ll_main"
+    android:weightSum="1">
+
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hang"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.5" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLAY"
+        android:background="@android:color/transparent"
+        android:id="@+id/btn_main_play"
+        android:layout_marginTop="0dp"
+        android:textSize="30sp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="me_btn_main_play" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="THEMES"
+        android:background="@android:color/transparent"
+        android:textSize="30sp"
+        android:id="@+id/btn_main_theme"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="me_btn_main_theme" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EXIT"
+        android:background="@android:color/transparent"
+        android:textSize="30sp"
+        android:id="@+id/btn_main_exit"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="me_btn_main_exit" />
+
+
+</LinearLayout>

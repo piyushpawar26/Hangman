@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/old_paper"
+    tools:context="com.p3p.hangman.ThemeActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Dark Theme:"
+        android:id="@+id/tv_theme_dark"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <ImageView
+        android:layout_width="54dp"
+        android:layout_height="96dp"
+        android:id="@+id/img_theme_dark"
+        android:src="@drawable/wall2_tp"
+        android:layout_alignTop="@+id/tv_theme_dark"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SET"
+        android:textSize="17dp"
+        android:id="@+id/btn_theme_dark"
+        android:layout_alignTop="@+id/img_theme_dark"
+        android:layout_alignParentEnd="true"
+        android:onClick="me_btn_theme_dark"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Light Theme:"
+        android:id="@+id/tv_theme_light"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="150dp" />
+
+    <ImageView
+        android:layout_width="54dp"
+        android:layout_height="96dp"
+        android:id="@+id/img_theme_light"
+        android:src="@drawable/wall1"
+        android:layout_alignTop="@+id/tv_theme_light"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SET"
+        android:textSize="17dp"
+        android:id="@+id/btn_theme_light"
+        android:layout_alignTop="@+id/img_theme_light"
+        android:layout_alignParentEnd="true"
+        android:onClick="me_btn_theme_light"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="None:"
+        android:id="@+id/tv_theme_none"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="260dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SET"
+        android:textSize="17dp"
+        android:id="@+id/btn_theme_none"
+        android:onClick="me_btn_theme_none"
+        android:layout_alignTop="@+id/tv_theme_none"
+        android:layout_alignStart="@+id/btn_theme_light" />
+
+</RelativeLayout>

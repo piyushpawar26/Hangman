@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@drawable/old_paper"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.p3p.hangman.GuessActivity"
+    android:id="@+id/rl_guess">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="2P"
+        android:textSize="50sp"
+        android:id="@+id/tv_guess_2p"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/tv_guess_guessed"
+        android:layout_marginStart="21dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Movie Name is:"
+        android:textSize="25sp"
+        android:id="@+id/tv_guess_moviename"
+        android:layout_below="@+id/tv_guess_2p"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Movie Name"
+        android:textSize="30sp"
+        android:id="@+id/tv_guess_movie"
+        android:layout_below="@+id/tv_guess_moviename"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Used letters are:"
+        android:textSize="25sp"
+        android:id="@+id/tv_guess_usedletters"
+        android:layout_below="@+id/tv_guess_movie"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:textSize="20sp"
+        android:id="@+id/tv_guess_guessed"
+        android:layout_below="@+id/tv_guess_usedletters"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Guess any letter of the movie:"
+        android:textSize="25sp"
+        android:id="@+id/tv_guess_letter"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_guess_guessed" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_guess"
+        android:maxLength="1"
+        android:ems="10"
+        android:hint="Enter letter here"
+        android:layout_below="@+id/tv_guess_letter"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GO!"
+        android:textSize="20sp"
+        android:id="@+id/btn_guess_go"
+        android:onClick="me_btn_guess_go"
+        android:layout_alignBottom="@+id/et_guess"
+        android:layout_alignEnd="@+id/tv_guess_chances" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Chances left:"
+        android:id="@+id/tv_guess_chances"
+        android:textSize="20sp"
+        android:layout_above="@+id/tv_guess_chancesnum"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="7"
+        android:textSize="30sp"
+        android:id="@+id/tv_guess_chancesnum"
+        android:layout_marginEnd="20dp"
+        android:layout_alignTop="@+id/tv_guess_moviename"
+        android:layout_alignEnd="@+id/tv_guess_letter" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/mTextField"
+        android:layout_above="@+id/tv_guess_letter"
+        android:layout_alignEnd="@+id/btn_guess_go" />
+
+
+</RelativeLayout>
